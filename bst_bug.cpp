@@ -128,7 +128,7 @@ void BinarySearchTree:remove(int d)
 			else
 			{
 				parent->right = curr->left;
-				delete curr
+				delete curr;
 			}
 		}
 		return;
