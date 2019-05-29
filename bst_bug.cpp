@@ -12,7 +12,7 @@ private:
 	{
 		tree_node* left;
 		tree_node* right;
-		int data
+		int data;
 	};
 	tree_node* root;
 public:
@@ -29,7 +29,7 @@ public:
 	void postorder(tree_node*);
 	void insert(int);
 	void remove(int);
-}
+};
 
 // Smaller elements go left
 // larger elements go right
@@ -169,7 +169,7 @@ void BinarySearchTree:remove(int d)
 				lcurr = (curr->right)->left;
 				while (lcurr->left != NULL)
 				{
-					lcurrp = lcurr
+					lcurrp = lcurr;
 					lcurr = lcurr->left;
 				}
 				curr->data = lcurr->data;
@@ -180,7 +180,7 @@ void BinarySearchTree:remove(int d)
 			{
 				tree_node* tmp;
 				tmp = curr->right;
-				curr->data = tmp->data
+				curr->data = tmp->data;
 				curr->right = tmp->right;
 				delete tmp;
 			}
