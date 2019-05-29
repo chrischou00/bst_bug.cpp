@@ -193,7 +193,7 @@ void BinarySearchTree:remove(int d)
 
 void BinarySearchTree::print_inorder()
 {
-	inorder(root);;
+	inorder(root);
 }
 
 void BinarySearchTree::inorder(tree_node* p)
